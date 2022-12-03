@@ -6,4 +6,8 @@ import {Component} from "@angular/core";
 })
 export class HeaderComponent {
   collapsed = true;
+
+  onSelect(feature: string) {
+
+  }
 }
