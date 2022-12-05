@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Recipe} from "../recipe.model";
 
 @Component({
@@ -11,7 +11,7 @@ export class RecipeListComponent implements OnInit {
     new Recipe('A Test Recipe', 'This is simply a test recipe.', 'https://static.onecms.io/wp-content/uploads/sites/44/2022/03/01/cucumber-sandwich.jpg')
   ];
 
-  recipeWasSelected = new EventEmitter<Recipe>();
+  @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
   constructor() { }
 
