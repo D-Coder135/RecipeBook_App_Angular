@@ -7,6 +7,7 @@ import {Component, ElementRef, OnInit} from '@angular/core';
 })
 export class ShoppingEditComponent implements OnInit {
   nameInputRef: ElementRef;
+  amountInputRef: ElementRef;
   constructor() { }
 
   ngOnInit(): void {
