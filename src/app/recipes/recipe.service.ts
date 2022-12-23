@@ -18,4 +18,8 @@ export class RecipeService {
   getRecipes(): Recipe[] {
     return this.recipes.slice();
   }
+
+  addIngredientsToShoppingList(ingredients: Ingredient[]) {
+
+  }
 }
