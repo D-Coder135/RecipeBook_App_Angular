@@ -21,5 +21,6 @@ export class ShoppingListService {
     // for (let ingredient of ingredients) {
     //   this.addIngredient(ingredient);
     // }
+    this.ingredients.push(...ingredients);
   }
 }
